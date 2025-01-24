@@ -20,7 +20,7 @@ Les variables d'environnement sont accessibles à tous les processus lancés par
 **Structure de base** :
 
 if [ condition ]
-then
+    then
     # commandes à exécuter si la condition est vraie
 else
     # commandes à exécuter si la condition est fausse
