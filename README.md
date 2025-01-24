@@ -7,3 +7,12 @@
 # exercice_2
 ![capture exercice 2](https://github.com/SPIDERPY/exercice_1/blob/main/Capture%20d%E2%80%99e%CC%81cran%202025-01-24%20a%CC%80%2014.51.43.png)
 
+# exercice_3
+
+1. **Donne une ligne de commande bash qui permet de lister la liste des utilisateurs d'un système Linux**
+
+   ```sh
+   cut -d: -f1 /etc/passwd
+
+
+
