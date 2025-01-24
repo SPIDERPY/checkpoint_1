@@ -19,12 +19,12 @@ Les variables d'environnement sont accessibles à tous les processus lancés par
 
 **Structure de base** :
 
-if [ condition ]
-    then
-    # commandes à exécuter si la condition est vraie
-else
-    # commandes à exécuter si la condition est fausse
-fi
+    if [ condition ]
+        then
+        # commandes à exécuter si la condition est vraie
+    else
+        # commandes à exécuter si la condition est fausse
+    fi
 **Exemple**
 
     #!/bin/bash
@@ -44,7 +44,7 @@ fi
     fi
 **Explication de l'exemple :**
 
-    if [ -e "$fichier" ] : Vérifie si le fichier existe.
+    1.if [ -e "$fichier" ] : Vérifie si le fichier existe.
 
     if [ -r "$fichier" ] : Si le fichier existe, vérifie s'il est lisible.
 
