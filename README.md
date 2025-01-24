@@ -17,7 +17,7 @@ chmod 754 myfile
 Les variables d'environnement sont accessibles à tous les processus lancés par le shell, tandis que les variables locales sont limitées au shell actuel.
 5. **Expliquez comment fonctionne la structure de contrôle "if" dans Bash. Donnez un exemple concret de son utilisation pour prendre une décision basée sur une condition dans un script Bash.**
 
-*Structure de base :
+**Structure de base :
 if [ condition ]
 then
     # commandes à exécuter si la condition est vraie
