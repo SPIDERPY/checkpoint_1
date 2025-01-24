@@ -17,37 +17,40 @@ chmod 754 myfile
 Les variables d'environnement sont accessibles à tous les processus lancés par le shell, tandis que les variables locales sont limitées au shell actuel.
 5. **Expliquez comment fonctionne la structure de contrôle "if" dans Bash. Donnez un exemple concret de son utilisation pour prendre une décision basée sur une condition dans un script Bash.**
 
-**Structure de base :
+**Structure de base** :
+
 if [ condition ]
 then
     # commandes à exécuter si la condition est vraie
 else
     # commandes à exécuter si la condition est fausse
 fi
-*Exemple
-#!/bin/bash
+**Exemple**
 
-fichier="monfichier.txt"
+    #!/bin/bash
 
-if [ -e "$fichier" ]
-then
-    if [ -r "$fichier" ]
+    fichier="monfichier.txt"
+
+    if [ -e "$fichier" ]
     then
-        echo "Le fichier existe et est lisible."
+        if [ -r "$fichier" ]
+        then
+            echo "Le fichier existe et est lisible."
+        else
+            echo "Le fichier existe mais n'est pas lisible."
+        fi
     else
-        echo "Le fichier existe mais n'est pas lisible."
+        echo "Le fichier n'existe pas."
     fi
-else
-    echo "Le fichier n'existe pas."
-fi
-*Explication de l'exemple :
-if [ -e "$fichier" ] : Vérifie si le fichier existe.
+**Explication de l'exemple :**
 
-if [ -r "$fichier" ] : Si le fichier existe, vérifie s'il est lisible.
+    if [ -e "$fichier" ] : Vérifie si le fichier existe.
 
-echo "Le fichier existe et est lisible." : Affiche un message si le fichier existe et est lisible.
+    if [ -r "$fichier" ] : Si le fichier existe, vérifie s'il est lisible.
 
-echo "Le fichier existe mais n'est pas lisible." : Affiche un message si le fichier existe mais n'est pas lisible.
+    echo "Le fichier existe et est lisible." : Affiche un message si le fichier existe et est lisible.
 
-echo "Le fichier n'existe pas." : Affiche un message si le fichier n'existe pas.
+    echo "Le fichier existe mais n'est pas lisible." : Affiche un message si le fichier existe mais n'est         pas lisible.
+
+    echo "Le fichier n'existe pas." : Affiche un message si le fichier n'existe pas.
 
