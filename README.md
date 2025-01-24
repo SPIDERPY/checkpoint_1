@@ -44,13 +44,28 @@ Les variables d'environnement sont accessibles à tous les processus lancés par
     fi
 **Explication de l'exemple :**
 
-    1.if [ -e "$fichier" ] : Vérifie si le fichier existe.
+    1. if [ -e "$fichier" ] : Vérifie si le fichier existe.
 
-    if [ -r "$fichier" ] : Si le fichier existe, vérifie s'il est lisible.
+    2. if [ -r "$fichier" ] : Si le fichier existe, vérifie s'il est lisible.
 
-    echo "Le fichier existe et est lisible." : Affiche un message si le fichier existe et est lisible.
+    3. echo "Le fichier existe et est lisible." : Affiche un message si le fichier existe et est lisible.
 
-    echo "Le fichier existe mais n'est pas lisible." : Affiche un message si le fichier existe mais n'est         pas lisible.
+    4. echo "Le fichier existe mais n'est pas lisible." : Affiche un message si le fichier existe mais n'est         pas lisible.
 
-    echo "Le fichier n'existe pas." : Affiche un message si le fichier n'existe pas.
+    5. echo "Le fichier n'existe pas." : Affiche un message si le fichier n'existe pas.
+    
+5. **Donne la (les) ligne(s) de commande(s) bash pour afficher le texte suivant :**
+
+6. **La commande `jobs -1` donne le résultat ci-dessous**
+ **Quelle commande te permet de mettre en avant le processus gedit ?**
+
+7. **Quels matériels réseaux sont sur la couche 2 et la couche 3 du modèle OSI ? Donne leurs spécificités.**
+
+8. **Quels sont les équivalents PowerShell des commandes bash `cd`, `cp`, `mkdir`, `ls` ?**
+
+9. **Dans la trame Ethernet, qu'est-ce que le payload ?**
+
+10. **Pourquoi les classes IP sont-elles remplacées par le CIDR ?**
+
+
 
